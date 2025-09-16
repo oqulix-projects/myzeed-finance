@@ -509,7 +509,7 @@ useEffect(() => {
 
   return (
     <>
-      {displayExpenses.length>0?<>
+      {displayExpenses?<>
         <div className="top-div">
           <h2>Financial Details</h2>
           <div className="date-picker-div">
