@@ -1,0 +1,104 @@
+
+  .modal-overlay{
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+  }
+  /* Modal Content */
+  .modal-content {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    text-align: center;
+    animation: openModal .4s;
+  }
+ 
+  
+  /* Modal Heading */
+  .modal-content h2 {
+    /* color: white; */
+    margin-bottom: 15px;
+  }
+  
+  /* Form Fields */
+  .modal-content .input-field,.input-field-select{
+    width: 320px;
+    background: white;
+    color: black;
+    /* border: none; */
+    border: 0.5px solid rgb(31, 31, 31);
+    padding: 8px;
+    /* margin:10px 60px 15px; */
+    outline: none;
+    margin: 10px;
+    border-radius: 30px;
+  }
+
+  
+  /* Dropdown Styling */
+  .input-field option {
+    background: rgb(255, 255, 255);
+  }
+  
+  /* Button Container */
+  .button-container {
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+    width: 70vw;
+  }
+  
+  /* Buttons */
+  .cancel-button, .add-button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 35px;
+    cursor: pointer;
+    width: 140px;
+    margin: auto 1%;
+
+  }
+  
+  .cancel-button {
+    background: rgb(255, 255, 255);
+    color: rgb(32, 32, 32);
+    border: solid 0.5px;
+    transition: 0.1s;
+  }
+  
+  .add-button {
+    background: black;
+    color: rgb(240, 240, 240);
+    transition: 0.1s;
+  }
+  .button-container button:hover{
+    transition: 0.1s;
+    transform: scale(1.05);
+  }
+.button-container button:active{
+  transform: scale(0.9);
+}
+.expense-form{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  align-items: center;
+}
+.input-field-select{
+  width: 340px;
+}
+@keyframes openModal{
+  0%{
+    opacity: 0;
+    margin-top: -20%;
+  }
+  100%{
+    opacity: 1;
+    margin-top: 1%;
+  }
+}

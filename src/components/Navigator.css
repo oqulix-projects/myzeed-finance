@@ -1,0 +1,38 @@
+.navigation{
+    width: 100vw;
+    padding: 20px;
+    border-bottom: solid rgb(194, 193, 193) 0.5px;
+    gap: 10px; 
+    justify-content:space-between;
+    align-items: center;
+}
+.navigation-buttons{
+    display: flex;
+    gap: 10px;
+}
+.navigation h1{
+    font-size: 35px;
+    text-align: center;
+    /* margin-top: -35px; */
+}
+.comp-div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+.company-logo{
+    width: 65px;
+    border-radius: 50%;
+}
+@media (max-width:600px) {
+    .navigation h1{
+        font-size: 18px;
+        text-align: left;
+    }.navigation{
+        padding: 10px;
+    }.company-logo{
+    width: 30px;
+    border-radius: 50%;
+}
+}

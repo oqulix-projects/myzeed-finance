@@ -1,0 +1,173 @@
+.input-picker{
+    padding: 5px;
+    margin: 1%;
+    border: solid rgb(8, 8, 8) 0.5px;
+    /* filter: invert(1); */
+    background-color: var(--secondary-color);
+    width: 120px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+label{
+    margin-left: 2%;
+}
+.chart-head{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto 20%;
+    font-size: 20px;
+    text-wrap: nowrap;
+}
+.chart-head h2{
+    font-weight: 100;
+}
+.chart-main{
+    align-items: center;
+    width: fit-content;
+    transform: scale(0.8);
+}
+.donuts{
+    border-radius: 100px;
+}
+
+.total-value{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.chart-container{
+    display:flex;
+    flex-wrap: wrap;
+}
+.field-filter{
+    display: flex;
+    padding: 2%;
+}
+.fields-set{
+    margin-right: 1%;
+    border: solid 0.5px;
+    padding: 0.5%;
+    border-radius: 30px;
+    font-size: 13px;
+}
+.checkbox-container{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+.chart-div{
+    display: flex;
+    align-items: center;
+    transform: scale(0.9);
+    width: 100vw;
+    overflow-x: hidden;
+}
+.date-picker-div input{
+    color: rgb(34, 34, 34);
+}
+.rst-btn{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.date-picker-div{
+    display: flex;
+    align-items: center;
+}
+@media (max-width:600px){
+    .chart-container{
+        width: 100vw !important;
+    }
+    .chart-main{
+        margin-left: 0px;
+    }
+    .chart-div{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .line-graph{
+        margin-left: 0px;
+        transform: scale(0.5);
+    }
+    .total-value{
+        font-size: 50px;
+    }
+    .input-picker{
+        width: 80px;
+    }
+    .field-filter{
+        justify-content: center;
+    }
+    .date-picker-div{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .checkbox-container{
+        justify-content: center;
+    }
+
+}
+
+/* Revenue chart */
+
+.revenue-table {
+  margin-top: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.revenue-table h3 {
+  color: #222;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.revenue-table table {
+  width: 98%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.revenue-table thead {
+  background: #f8f9fb;
+}
+
+.revenue-table th {
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.revenue-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #555;
+}
+
+.revenue-table tr:hover {
+  background: #f5f7fa;
+  transition: background 0.2s ease;
+}
+
+.revenue-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.revenue-table td:nth-child(4) {
+  font-weight: 600;
+  color: #2b7a0b; /* Green for amounts */
+}

@@ -1,0 +1,84 @@
+.filter-div{
+    display: flex;
+    gap: 50px;
+    align-items: end;
+    margin: 15px;
+    justify-content: space-between;
+}
+.filter-select-div{
+    display: flex;
+    gap: 15px;
+}
+.filter-selects{
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+.filter-selects select{
+    border: solid 0.5px rgb(185, 184, 184);
+    padding: 4px;
+    font-weight: 400;
+    border-radius: 15px;
+}
+.filter-div label{
+    font-weight: 300;
+}
+.search-filter input{
+    width: 460px;
+    border: solid 0.5px rgb(185, 184, 184);
+    padding: 4px;
+    font-weight: 400;
+    border-radius: 0px 20px 20px 0px;
+}
+.search-filter{
+    display: flex;
+    align-items: center;
+}
+.search-filter i{
+    background-color: rgb(122, 122, 122);
+    color: white;
+    border-radius: 20px 0px 0px 20px;
+    padding: 6px;
+}
+.sort-by-div select{
+    border: solid 0.5px rgb(185, 184, 184);
+    padding: 4px;
+    font-weight: 400;
+    border-radius: 15px;
+}
+.sort-by-div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+@media (max-width:600px) {
+    .search-filter input{
+        width: 80vw;
+    }
+    .filter-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    .filter-select-div{
+        gap: 10px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .filter-selects select{
+        border-radius: 10px;
+        padding: 2px;
+    }
+    .sort-by-div select{
+        padding: 2px;
+        border-radius: 5px;
+    }
+    .filter-selects{
+        display: grid;
+    grid-template-columns: 100px 100px;
+    }
+}
+.filter-select{
+    width: 100px;
+}

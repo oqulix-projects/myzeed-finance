@@ -1,0 +1,7 @@
+body{
+    background-color: rgb(141, 41, 41);
+}
+button:hover{
+    transition: 0s;
+    transform: scale(1.5);
+}

@@ -1,0 +1,83 @@
+*{
+  margin :0px;
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: rgb(49, 49, 49);
+  animation: openComponents 0.3s linear;
+}
+body, html {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Also make sure root containers don’t allow overflow */
+#root {
+  overflow-x: hidden;
+}
+
+/* Optional: Avoid any unintentional full-width elements */
+* {
+  box-sizing: border-box;
+}
+button:hover{
+  transform: scale(1.05);
+  transition: 0.1s;
+}
+button:active{
+  transform: scale(.95);
+  transition: 0.1s;
+}
+.default-btn{
+      cursor: pointer;
+  height: fit-content;
+  width: fit-content;
+  padding: 5px 10px;
+  background-color: white;
+  border: solid 0.5px rgb(143, 141, 141);
+  border-radius: 30px;
+}
+.default-btn.active {
+  background-color: #222222; /* highlight color */
+  color: white;
+}
+:root{
+  --primary-color:rgb(252, 252, 252);
+  --accent-color:rgb(204, 222, 243);
+  --secondary-color:rgb(236, 236, 236);
+  --background-color:aliceblue;
+  --text-dark:rgb(87, 84, 84);
+  --text-light:rgb(240, 239, 239);
+}
+@media (max-width: 600px) {
+ *{
+  font-size: 12px;
+ } 
+ body{
+  width: 100vw;
+  overflow-x: hidden;
+  margin-left: 0px;
+ }
+ :root{
+ --secondary-color:rgb(255, 255, 255);
+ }
+ .default-btn{
+      cursor: pointer;
+  height: fit-content;
+  width: fit-content;
+  padding: 3px 6px;
+  background-color: white;
+  border: solid 0.5px rgb(143, 141, 141);
+  border-radius: 30px;
+  font-size: 8px;
+}
+}
+
+@keyframes openComponents{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

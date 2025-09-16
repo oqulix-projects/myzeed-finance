@@ -1,0 +1,12 @@
+.revenue-form .input-field{
+    width: 280px;
+    margin: 1%;
+}
+.revenue-form select{
+    width: 280px !important;
+}
+.revenue-form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}

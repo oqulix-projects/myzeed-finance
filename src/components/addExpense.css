@@ -1,0 +1,51 @@
+.addExp{
+    display: flex;
+    /* margin-left: 10px; */
+    align-items: center;
+    width: fit-content;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin: 20px auto;
+}
+.credit-add{
+    background: none !important;
+    color: black !important;
+    font-weight: 800 !important;
+    margin-left: 50px;
+}
+.add{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    background: rgb(43, 43, 43);
+    border-radius: 30px;
+    border: solid black 0.5px !important;
+    transition: 0.2s;
+    cursor: pointer;
+    text-wrap: nowrap;
+    height: 20px;
+    padding: 18px;
+}
+.add i{
+    color: aliceblue;
+    margin: 2px;
+}
+.add:hover{
+    color: black;
+    background-color: white !important;
+}
+.add:hover i{
+    color: black;
+}
+.add:active{
+    transform: scale(0.9);
+}
+@media (max-width:600px) {
+    .add{
+        margin: 5px;
+        border-radius: 5px;
+    }
+
+}
